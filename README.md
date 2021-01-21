@@ -8,6 +8,8 @@ Two Issues:
 1. The original textures & materials have been lost in the conversion (JSON files originally corresponding to views were not compatible for the conversion)
 2. Unable to overlay the 6 surfaces for the lung model (can only view one surface - ie. one section of the lung - at a time)
 
+## Original Creator's Work:
+
 <p align="center">
     <a href="https://www.npmjs.com/package/vue-3d-model"><img src="https://img.shields.io/npm/v/vue-3d-model.svg" alt="Version"></a>
     <a href="https://travis-ci.org/hujiulong/vue-3d-model"><img src="https://travis-ci.org/hujiulong/vue-3d-model.svg?branch=master" alt="Build"></a>
