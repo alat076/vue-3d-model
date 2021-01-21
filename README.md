@@ -1,9 +1,8 @@
 # vue-3d-model
 
 ## Lung Web App Visualisation Project:
-The smoker's airway model is currently implemented in demo-gltf.vue
+The smoker's airway model is currently implemented in ```demo-gltf.vue``` (In the web browser, the airway model is seen in the tab "glTF Model (.gltf)").
 
-(in the web browser, the airway model is seen in the tab "glTF Model (.gltf)").
 The original JSON was converted into glb format using https://blackthread.io/gltf-converter/
 
 Two Issues:
