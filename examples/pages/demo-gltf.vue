@@ -18,7 +18,7 @@ import ModelGltf from '../../src/model-gltf.vue';
 const code = `
 
 <template>
-    <model-gltf src="static/models/gltf/Duck/glTF/Duck.gltf"></model-gltf>
+    <model-gltf src="static/models/gltf/Lung/smoker_and_asthmatic_flow_1.glb></model-gltf>
 </template>
 
 <script>
@@ -37,7 +37,7 @@ const htmlCode = `
 <body>
     <div id="app">
         <model-gltf 
-            src="static/models/gltf/Duck/glTF/Duck.gltf"
+            src="static/models/gltf/Lung/smoker_and_asthmatic_flow_1.glb"
             @on-mousemove="onMouseMove">
         </model-gltf>
     </div>
