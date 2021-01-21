@@ -9,9 +9,10 @@ import ModelCollada from './model-collada.vue';
 import ModelGltf from './model-gltf.vue';
 
 // alias
-const ModelJson = Vue.extend(ModelThree, {
+const ModelJson = './legacythree2gltf.js model.json --optimize';
+/*const ModelJson = Vue.extend(ModelThree, {
   name: 'model-json',
-});
+});*/
 
 const ModelDae = Vue.extend(ModelCollada, {
   name: 'model-dae',

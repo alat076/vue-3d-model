@@ -29,7 +29,9 @@
     "vue": ">=2.0.0"
   },
   "dependencies": {
+    "canvas": "^2.6.1",
     "three": "^0.121.1",
+    "vblob": "^1.0.2",
     "zincjs": "^0.36.2"
   },
   "devDependencies": {
