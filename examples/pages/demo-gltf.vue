@@ -4,7 +4,7 @@
       <model-gltf
         :backgroundAlpha="0"
         @on-load="onLoad"
-        src="static/models/gltf/Duck/glTF/Duck.gltf"
+        src="static/models/gltf/Lung/smoker_and_asthmatic_flow_1.glb"
       ></model-gltf>
       <div class="example-loading" v-show="loading"></div>
     </template>
