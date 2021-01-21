@@ -29,7 +29,8 @@
     "vue": ">=2.0.0"
   },
   "dependencies": {
-    "three": "^0.121.1"
+    "three": "^0.121.1",
+    "zincjs": "^0.36.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.8",
