@@ -2,14 +2,6 @@
   <demo-block :vue-code="code" :html-code="htmlCode">
     <template slot="preview">
       <button type="button" class="create" @click="snapshot">snapshot</button>
-      <model-collada
-        ref="model"
-        :backgroundAlpha="0"
-        @on-load="onLoad"
-        :rotation="rotation"
-        src="static/models/collada/elf/elf.dae"
-        :glOptions="{ preserveDrawingBuffer: true }"
-      />
       <img class="snapshot" v-if="base64" :src="base64" />
       <div class="example-loading" v-show="loading"></div>
     </template>
@@ -18,7 +10,6 @@
 
 <script>
 import DemoBlock from '../components/demo-block.vue';
-import ModelCollada from '../../src/model-collada.vue';
 
 const code = `
 <template>
@@ -106,7 +97,6 @@ export default {
     },
   },
   components: {
-    ModelCollada,
     DemoBlock,
   },
 };

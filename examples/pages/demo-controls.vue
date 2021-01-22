@@ -6,16 +6,6 @@
         <button @click="toggle('zoom')">{{ enableZoom ? 'disable' : 'enable' }} zoom</button>
         <button @click="toggle('rotate')">{{ enableRotate ? 'disable' : 'enable' }} rotation</button>
       </div>
-      <model-obj
-        :backgroundAlpha="0"
-        @on-load="onLoad"
-        src="static/models/obj/tree.obj"
-        :controlsOptions="{
-          enablePan,
-          enableZoom,
-          enableRotate,
-        }"
-      ></model-obj>
       <div class="example-loading" v-show="loading"></div>
     </template>
   </demo-block>
@@ -38,7 +28,6 @@
 
 <script>
 import DemoBlock from '../components/demo-block.vue';
-import ModelObj from '../../src/model-obj.vue';
 
 const code = `
 <template>
@@ -133,7 +122,6 @@ export default {
     },
   },
   components: {
-    ModelObj,
     DemoBlock,
   },
 };

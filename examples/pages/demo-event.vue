@@ -1,13 +1,6 @@
 <template>
   <demo-block :vue-code="code" :html-code="htmlCode">
     <template slot="preview">
-      <model-obj
-        :backgroundAlpha="0"
-        ref="model"
-        @on-load="onLoad"
-        @on-mousemove="onMouseMove"
-        src="static/models/obj/tree.obj"
-      ></model-obj>
       <div class="example-loading" v-show="loading"></div>
     </template>
   </demo-block>
@@ -15,7 +8,6 @@
 
 <script>
 import DemoBlock from '../components/demo-block.vue';
-import ModelObj from '../../src/model-obj.vue';
 
 const code = `
 
@@ -132,7 +124,6 @@ export default {
     },
   },
   components: {
-    ModelObj,
     DemoBlock,
   },
 };

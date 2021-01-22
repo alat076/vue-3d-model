@@ -17,13 +17,6 @@
         <button @click="bgAlpha = 1">1</button>
         <button @click="bgAlpha = 0">0</button>
       </div>
-      <model-obj
-        class="model-box"
-        :backgroundAlpha="bgAlpha"
-        :backgroundColor="bgColor"
-        @on-load="onLoad"
-        src="static/models/obj/tree.obj"
-      ></model-obj>
       <div class="example-loading" v-show="loading"></div>
     </template>
   </demo-block>
@@ -67,7 +60,6 @@
 
 <script>
 import DemoBlock from '../components/demo-block.vue';
-import ModelObj from '../../src/model-obj.vue';
 
 const code = `
 <template>
@@ -158,7 +150,6 @@ export default {
     },
   },
   components: {
-    ModelObj,
     DemoBlock,
   },
 };

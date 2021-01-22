@@ -31,24 +31,6 @@
                     <router-link to="demo-json">JSON Model (.json)</router-link>
                 </li>
                 <li class="examples-menu-item">
-                    <router-link to="demo-obj">OBJ Model (.obj)</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-obj-mtl">OBJ + MTL (.obj + .mtl)</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-fbx">FBX Model (.fbx)</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-stl">STL Model (.stl)</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-collada">Collada Model (.dae)</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-ply">PLY Model (.ply)</router-link>
-                </li>
-                <li class="examples-menu-item">
                     <router-link to="demo-gltf">glTF Model (.gltf)</router-link>
                 </li>
             </ul>

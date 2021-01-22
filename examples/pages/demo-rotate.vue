@@ -1,12 +1,6 @@
 <template>
   <demo-block :vue-code="code" :html-code="htmlCode">
     <template slot="preview">
-      <model-collada
-        ref="collada"
-        :rotation="rotation"
-        @on-load="onLoad"
-        src="static/models/collada/elf/elf.dae"
-      ></model-collada>
       <div class="example-loading" v-show="loading"></div>
     </template>
   </demo-block>
@@ -14,7 +8,6 @@
 
 <script>
 import DemoBlock from '../components/demo-block.vue';
-import ModelCollada from '../../src/model-collada.vue';
 
 const code = `
 <template>
@@ -109,7 +102,6 @@ export default {
     },
   },
   components: {
-    ModelCollada,
     DemoBlock,
   },
 };
