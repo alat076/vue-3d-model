@@ -4,47 +4,18 @@
             <a href="https://github.com/hujiulong/vue-3d-model" class="title">Vue3DModel</a>
             <a href="https://github.com/hujiulong/vue-3d-model" class="github">View on GitHub</a>
         </div>
-        <div class="examples-content">
-            <ul class="examples-menu">
-                <li class="examples-menu-title">Examples</li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-basic">basic</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-rotate">rotate</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-controls">controls</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-background">background</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-snapshot">snapshot</router-link>
-                </li>
-                <li class="examples-menu-title">Events</li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-event">mousemove</router-link>
-                </li>
-                <li class="examples-menu-title">Model Formats</li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-json">JSON Model (.json)</router-link>
-                </li>
-                <li class="examples-menu-item">
-                    <router-link to="demo-gltf">glTF Model (.gltf)</router-link>
-                </li>
-            </ul>
-            <div class="examples-pages">
-                <router-view></router-view>
-            </div>
-        </div>
+        <left-side></left-side>
     </div>
 </template>
 
 <script>
+import LeftSide from './content/LeftSide.vue';
 
 export default {
   name: 'app',
+  components: {
+    LeftSide,
+  },
 };
 </script>
 <style>
@@ -72,9 +43,7 @@ html, body, .examples {
 
 body {
     background: #eee;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                 "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-                 SimSun, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
     background: #fff;
 }
 
