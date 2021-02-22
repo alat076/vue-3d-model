@@ -16,9 +16,8 @@ import DemoBlock from '../components/demo-block.vue';
 import ModelGltf from '../../src/model-gltf.vue';
 
 const code = `
-
 <template>
-    <model-gltf src="static/models/gltf/Lung/smoker_and_asthmatic_flow_1.glb></model-gltf>
+    <model-gltf src="static/models/gltf/Lung/smoker_and_asthmatic_flow_1.glb"></model-gltf>
 </template>
 
 <script>
@@ -30,7 +29,6 @@ const code = `
         }
     }
 <\/script>
-
 `;
 
 const htmlCode = `

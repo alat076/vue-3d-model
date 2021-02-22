@@ -1,11 +1,17 @@
 <template>
-    <div>
-      <model-three :backgroundAlpha="0" @on-load="onLoad" src="static/models/json/scene.json"></model-three>
+  <demo-block :vue-code="code" :html-code="htmlCode">
+    <template slot="preview">
+      <model-three
+        :backgroundAlpha="0"
+        @on-load="onLoad"
+      ></model-three>
       <div class="example-loading" v-show="loading"></div>
-    </div>
+    </template>
+  </demo-block>
 </template>
 
 <script>
+import DemoBlock from '../components/demo-block.vue';
 import ModelThree from '../../src/model-three.vue';
 
 const code = `
@@ -54,6 +60,7 @@ export default {
   },
   components: {
     ModelThree,
+    DemoBlock,
   },
 };
 </script>
